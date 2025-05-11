@@ -41,7 +41,7 @@ Manually managing student vaccination data is time-consuming and prone to error.
 
 ```bash
 git clone https://github.com/srilakshmikalaga/schoolvaccination-application.git
-cd school-vaccination
+cd SchoolVaccinationApp
 ```
 
 ### 2. Backend Setup:
