@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
     const saved = await newStudent.save();
     res.status(201).json(saved);
   } catch (err) {
-    console.error("❌ Failed to save student:", err.message);
+    console.error("Failed to save student:", err.message);
     res.status(400).json({ error: err.message });
   }
 });
@@ -30,7 +30,7 @@ router.get("/v2", async (req, res) => {
       name: s.name,
       class: s.class,
       vaccinations: s.vaccinations,
-      vaccinesTaken: s.vaccinations.map((v) => v.vaccine), // ⬅️ this is what your UI will display
+      vaccinesTaken: s.vaccinations.map((v) => v.vaccine),
     }));
 
     res.json(enriched);
@@ -42,15 +42,15 @@ router.get("/v2", async (req, res) => {
 // POST /students/bulk — insert multiple students at once
 router.post("/bulk", async (req, res) => {
   try {
-    const students = req.body; // expect an array
+    const students = req.body; 
     if (!Array.isArray(students)) {
       return res.status(400).json({ error: "Expected an array of students" });
     }
 
-    const result = await Student.insertMany(students, { ordered: false }); // ordered: false = continue on errors
+    const result = await Student.insertMany(students, { ordered: false }); 
     res.status(201).json({ inserted: result.length });
   } catch (err) {
-    console.error("❌ Bulk insert error:", err.message);
+    console.error("Bulk insert error:", err.message);
     res.status(500).json({ error: "Bulk insert failed", details: err.message });
   }
 });

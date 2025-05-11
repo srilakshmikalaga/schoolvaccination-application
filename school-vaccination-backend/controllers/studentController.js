@@ -13,7 +13,7 @@ exports.getStudentById = async (req, res) => {
     }
     res.status(200).json(student);
   } catch (err) {
-    console.error('❌ Error:', err.message);
+    console.error('Error:', err.message);
     res.status(500).json({ message: 'Internal server error' });
   }
 };
