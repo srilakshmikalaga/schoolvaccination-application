@@ -1,70 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# School Vaccination Portal
 
-## Available Scripts
+**Student:** K N S Srilakshmi  
+**Roll No:** 2024TM93297  
+**Date:** May 11, 2025
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+School Vaccination Portal is a full-stack web application built using the MERN stack to manage student vaccination data, schedule vaccination drives, and generate reports. The portal allows school coordinators to add students individually or via bulk Excel upload, manage vaccine records, and view real-time dashboards and reports.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### GitHub Repository
+[School Vaccination app](https://github.com/srilakshmikalaga/schoolvaccination-application.git)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Video Submission
+https://drive.google.com/file/d/1nm8egTo2dfSLDXQX2g_9t_xLRX_8yice/view?usp=sharing
 
-### `npm test`
+## Problem Definition
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Manually managing student vaccination data is time-consuming and prone to error. This portal addresses those challenges by providing a structured, digital interface with features for real-time tracking, data entry, and reporting.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js + Tailwind CSS
+- **Backend**: Node.js + Express.js
+- **Database**: MongoDB Atlas
+- **Authentication**: : Simulated (Admin only)
+- **API Documentation**: Swagger, Postman
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Key Modules:
+1. **Admin Login**: Provides secure access control for authorized school staff.
+2. **Student Management**:  Enables adding, editing, searching, and bulk uploading of student vaccination records.
+3. **Vaccination Drives**: Allows scheduling and editing of drives with status tagging (Editable/Expired).
+4. **Dashboard**: Displays real-time statistics through summary cards and interactive pie charts.
+5. **Reports** : Generates exportable vaccination reports with advanced filtering and pagination.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/srilakshmikalaga/schoolvaccination-application.git
+cd school-vaccination
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Backend Setup:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd school-vaccination-backend
+npm install
+# Create a .env file with MONGO_URI
+npm start
+```
 
-## Learn More
+### 3. Frontend Setup:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd school-vaccination-frontend
+npm install
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## References
 
-### Code Splitting
+- [MongoDB Documentation – ](https://www.mongodb.com/docs/manual/)
+- [React.js Official Docs ](https://reactjs.org/docs/getting-started.html)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
